@@ -1,11 +1,12 @@
 #include <stdio.h>
-/*
- * Main - Entry point
+/**
+ * main - Prints "Programming is like building a multiligual puzzle"
+ * main: prints a string output using puts
  *
  * Return: always 0 as success
  */
 int main(void)
 	{
-		puts("Programing is like building a multiligual puzzle\n");
+		puts("\"Programming is like building a multiligual puzzle\n");
 		return (0);
 	}
