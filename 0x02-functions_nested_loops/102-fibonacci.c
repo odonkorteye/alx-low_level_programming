@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long num = 2, sec = 2, sum;
+	long num = 1, sec = 2, sum;
 
 	printf("1, 2");
 	while (sum < 20365011073)
