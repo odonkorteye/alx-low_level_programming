@@ -15,6 +15,6 @@ int main(void)
 		{
 			_putchar(alx[c]);
 		}
-		_puchar('\n');
+		_putchar('\n');
 		return (0);
 	}
