@@ -1,17 +1,15 @@
 #include "main.h"
 /**
- * _strcmp - string to compare
- * @s1: first string
- * @s2: second string
- *
- * Return: string value
+ * factorial - function that returns the factorial of a given number.
+ * @n: number
+ * Return: value of factorial
  */
-
-int _strcmp(char *s1, char *s2)
+int factorial(int n)
 {
-	int i = 0;
-
-	while (s1[i] == s2[i] && s1[i] != '\0')
-		i++;
-	return (s1[i] - s2[i]);
+	if (n == 0)
+		return (1);
+	else if (n < 0)
+		return (-1);
+	return (n * factorial(n - 1));
 }
+
