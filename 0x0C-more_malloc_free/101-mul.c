@@ -177,6 +177,50 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 }
 
 /**
+ * is_digit - checks if a string contains a non-digit char
+ * @s: string to be checked
+ * Return: 0 if non-digit, 1 otherwie
+ */
+int is_digit(char *s)
+{
+	int i = 0;
+
+	while (s[i])
+	{
+		if (s[i] < '0' || s[i] > '9')
+			return (0);
+		i++;
+	}
+	return (1);
+}
+
+/**
+ * _strlen - returns the length of a string
+ * @s: string to evaluate
+ * Return: string length
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+/**
+ * errors - handles error for the main
+ */
+void errors(void)
+{
+	printf("Error\n");
+	exit(98);
+}
+
+
+/**
  * main - Multiplies two positive numbers.
  * @argv: The number of arguments passed to the program.
  * @argc: An array of pointers to the arguments.
